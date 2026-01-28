@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harvesting Brilliance</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    /* HERO IMAGE */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background-image: url("/static/images/pumpkeen.jpg");
+      background-size: cover;
+      background-position: center bottom;
+    }
+
+    /* BUTTONS TOP LEFT */
+    .top-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .top-buttons a {
+      padding: 0.6rem 1.4rem;
+      background-color: #2d6a4f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0.4rem;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+
+    .top-buttons a.secondary {
+      background-color: #e67e22;
+    }
+
+    .top-buttons a:hover {
+      opacity: 0.85;
+    }
+
+    /* TEXT ON IMAGE */
+    .hero-text {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      max-width: 900px;
+      padding: 0 1rem;
+    }
+
+    .hero-text h1 {
+      color: #e67e22;
+      font-size: 3.2rem;
+      margin-bottom: 0.6rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    }
+
+    .hero-text h2 {
+      color: #2d6a4f;
+      font-size: 1.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-text p {
+      color: #333;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      background: rgba(255,255,255,0.65);
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      border-radius: 0.4rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+      .hero-text h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero">
+
+    <!-- TOP LEFT BUTTONS -->
+    <div class="top-buttons">
+      <a href="/predict-page">🌱 Predict Now</a>
+      <a href="/predict-page" class="secondary">Go to Predictor</a>
+    </div>
+
+    <!-- TEXT ON IMAGE -->
+    <div class="hero-text">
+      <h1>Harvesting Brilliance</h1>
+      <h2>A Taxonomic Tale of Pumpkin Seed Varieties</h2>
+      <p>
+        This project uses machine learning to classify pumpkin seed varieties
+        based on morphological measurements, bringing data-driven precision
+        to agricultural research.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
